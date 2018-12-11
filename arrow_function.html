@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Arrow function</title>
+</head>
+<body>
+	<script>
+		var showInfo = (name, message) =>{
+			console.log("Name : "+name+" message : "+message);
+		};
+
+		showInfo('Canh', 'Deha');
+
+		// 1 tham so
+		var showInfo = message => console.log(message);
+		showInfo('1 tham so');
+
+		// khong tham so
+		var showInfo = () => console.log("Khong tham so");
+		showInfo();
+	</script>
+
+	<script>
+		var domains = ['hust.edu.vn', 'deha.vn', 'dell.com'];
+		domains.map((value, key) => console.log(value.toUpperCase() + " index : "+key));
+
+		setTimeout(() => {
+			console.log('10 s troi qua')
+		}, 10000);
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Destructuring Assignments</title>
+</head>
+<body>
+	<script>
+		// array
+		var date = [2, 15, 12, 2018];
+		var [day, date, month, year] = date;
+		console.log('Year : '+year);
+
+		// array
+		let student = ['Hoang', 'CNTT', 20, 'HUST', 'male'];
+		let [name, field, age, university] = student;
+		console.log('Filed : '+field);
+
+		//object
+		var person = {
+			name : 'Hoang',
+			field : 'CNTT',
+			age : 20,
+			university : 'HUST',
+			gender : 'male' 
+		};
+
+		var {name : n, field : f, age : a, university : u, gender : g} = person;
+		console.log(n+" "+f+" "+a+" "+u+" "+g+" ");
+
+	</script>
+</body>
+</html>

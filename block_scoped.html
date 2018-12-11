@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Block Scoped</title>
+</head>
+<body>
+	<script>
+		var a = 12;
+		var b = 30;
+		if(a<b){
+			var temp = a;
+			a = b;
+			b = temp;
+		}
+
+		console.log("a : "+a);
+		console.log("b : "+b);
+		console.log("temp : "+temp);
+	</script>
+
+
+	<script>
+		var no = 10;
+		var no = 100;
+		console.log(no);
+	</script>
+
+	<script>
+		let x = 10;
+		let x = 100;
+		console.log(x); // Loi
+	</script>
+</body>
+</html>
